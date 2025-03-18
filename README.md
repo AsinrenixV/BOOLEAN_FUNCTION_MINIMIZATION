@@ -33,18 +33,38 @@ Hardware – PCs, Cyclone II , USB flasher
 
 **Program:**
 
-/* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
+ Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
+```
+Developed by: ASIN RENIX V.
+ RegisterNumber: 212224040036.
+ ```
+```
+First program:
+module EXP2(a,b,c,d,f1);
+input a,b,c,d;
+output f1;
+assign f1=((~b&~d|a&b&~c|~a&b&d));
+endmodule
 
-Developed by: RegisterNumber:*/
+Second program:
+module EXP2(w,x,y,z,f2);
+input w,x,y,z;
+output f2;
+assign f2=((~y&z|x&y|w&y));
+endmodule
+```
+**Truth table & symbol**
 
+![alt text](image-1.png)
+![alt text](image-2.png)
 
-**RTL realization**
-
-**Output:**
-
-**RTL**
+**RTL realization Output**
+![alt text](<Screenshot (120).png>)
+![alt text](<Screenshot (119).png>)
 
 **Timing Diagram**
+![alt text](<Screenshot (121).png>)
+![alt text](<Screenshot (118).png>)
 
 **Result:**
 
